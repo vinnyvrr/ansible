@@ -1,0 +1,6 @@
+---
+- name: create users to all hosts
+  hosts: app
+  become: yes
+  roles: 
+   - docker
