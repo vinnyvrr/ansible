@@ -1,9 +1,8 @@
 ---
-users:
-  - name: vreddy
-    key: "{{lookup('file', 'roles/common/files/vreddy.pub') }}"
 
 admin:
+  - name: vreddy
+    key: "{{lookup('file', 'roles/common/files/vreddy.pub') }}"
   - name: vinodmeda
     key: "{{lookup('file', 'roles/common/files/vinodmeda.pub') }}"
   - name: harimora
