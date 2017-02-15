@@ -1,7 +1,4 @@
----
-- name: create docker group
-  group: name=docker state=present
-  
+---  
 - name: Add Users
   user: name={{item.name}} state=present groups=admin
   with_items: "{{admin}}"
