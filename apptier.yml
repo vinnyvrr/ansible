@@ -1,1 +1,7 @@
-
+---
+- name: deploy the application
+  hosts: apptier
+  become: yes
+  roles: 
+    - docker
+    - app
