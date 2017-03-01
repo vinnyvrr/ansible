@@ -1,0 +1,11 @@
+---
+- name: create a app directory
+  file: path=/opt/app state=directory mode=0755
+  
+- name: copy the docker-compose file
+  template: src=docker-compose.yml.j2 dest=/opt/app/docker-compose.yml
+
+- name: start docker compose
+  shell: docker-compose up -d
+  args: 
+    chdir: /opt/app
