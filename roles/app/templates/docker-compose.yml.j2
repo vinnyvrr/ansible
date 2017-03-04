@@ -4,7 +4,7 @@ sonar:
     - 9000:9000
     - 9092:9092
   environment: 
-    - SONAR_JDBC_URL=jdbc:postgresql://10.0.10.44:5432/sonar
+    - SONAR_JDBC_URL=jdbc:postgresql://sonar.ck9q7zan0tbf.us-west-2.rds.amazonaws.com:5432/sonar
     - SONAR_JDBC_USERNAME=sonarqube
     - SONAR_JDBC_PASSWORD=mypassword
   restart: always
